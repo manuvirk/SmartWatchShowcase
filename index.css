@@ -1,0 +1,127 @@
+body {
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* left side styling */
+.container1 {
+    /* display: flex; */
+    background-image: url("https://i.imgur.com/PTgQlim.png");
+    position: relative;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+.container1 > img {
+    position: absolute;
+    transform: translateX(-10%);
+    width: 120%;
+    height: 100%;
+    z-index: -1;
+}
+.container1 > p {
+    position: absolute;
+    top: 45%;
+    left: 85%;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-align: center;
+    color: blue;
+    visibility: hidden;
+}
+/* #watchpic {
+    width: 400px;
+    height: 800px;
+} */
+.container1 > #heartbeat {
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 45%;
+    left: 87%;
+    width: 50px;
+    height: 50px;
+    animation: beat 5s linear 0s infinite alternate;
+    visibility: hidden;
+}
+
+.container1 > #heart-rate {
+    position: absolute;
+    top: 55%;
+    left: 87%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    visibility: hidden;
+}
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.25);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    75% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* right side styling */
+.container2 {
+    display: grid;
+    align-content: normal;
+    justify-items: baseline;
+}
+
+.wrapper > div {
+    align-items: start;
+}
+.wrapper > div:nth-child(odd) {
+    align-items: start;
+}
+.container3 > span > button {
+    height: 4em;
+    width: 4em;
+}
+.container4 > span > button {
+    height: 3em;
+    width: 7em;
+    background-color: beige;
+    margin: 20px;
+}
+.black {
+    background-color: #23211f;
+}
+.red {
+    background-color: #ca3d22;
+}
+
+.pink {
+    background-color: #e9c7be;
+}
+.blue {
+    background-color: #565681;
+}
+.container5 > button {
+    margin: 2em;
+    height: 3em;
+    width: 7em;
+    background-color: beige;
+}
